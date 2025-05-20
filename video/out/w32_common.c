@@ -939,7 +939,7 @@ static bool is_high_contrast(void)
 
 static DWORD update_style(struct vo_w32_state *w32, DWORD style)
 {
-    const DWORD NO_FRAME = WS_OVERLAPPED | WS_MINIMIZEBOX | WS_THICKFRAME;
+    const DWORD NO_FRAME = WS_OVERLAPPED | WS_MAXIMIZEBOX | WS_MINIMIZEBOX | WS_THICKFRAME;
     const DWORD FRAME = WS_OVERLAPPEDWINDOW;
     const DWORD FULLSCREEN = NO_FRAME & ~WS_THICKFRAME;
     style &= ~(NO_FRAME | FRAME | FULLSCREEN);
