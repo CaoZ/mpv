@@ -918,7 +918,7 @@ static bool is_high_contrast(void)
 
 static LONG_PTR update_style(struct vo_w32_state *w32, LONG_PTR style)
 {
-    const LONG_PTR NO_FRAME = WS_OVERLAPPED | WS_MINIMIZEBOX | WS_THICKFRAME;
+    const LONG_PTR NO_FRAME = WS_OVERLAPPED | WS_MAXIMIZEBOX | WS_MINIMIZEBOX | WS_THICKFRAME;
     const LONG_PTR FRAME = WS_OVERLAPPEDWINDOW;
     const LONG_PTR FULLSCREEN = NO_FRAME & ~WS_THICKFRAME;
     style &= ~(NO_FRAME | FRAME | FULLSCREEN);
